@@ -1,0 +1,19 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "making this to learn css preprocessor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass sass/main.scss css/style.css --watch",
+    "start": "live-server",
+    "dev": "concurrently --prefix \"{name}\" --names \"SASS=> ,LIVE-SERVER=> \" --prefix-colors \"cyan,green\" \"npm run compile\" \"npm run start\""
+  },
+  "author": "shafik",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.87.0",
+    "concurrently": "^8.2.2"
+  }
+}

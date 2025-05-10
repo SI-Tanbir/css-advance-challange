@@ -6,163 +6,134 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
-*{
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 #context-box {
-    margin-top: 10rem;
-    /* background-color: red */
+  margin-top: 10rem;
+  /* background-color: red */
 }
-.natours-logo{
-    width: 9rem;
-    height: 5rem;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    cursor: pointer;
+
+.natours-logo {
+  width: 9rem;
+  height: 5rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
 }
-.burger-menu{
-    padding-right: 2rem;
+
+.burger-menu {
+  padding-right: 2rem;
 }
-.burger-menu img{
-    width: 3rem;
-    height: 3rem;
- 
-    
-    cursor: pointer;
+
+.burger-menu img {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
 }
 
 .btn button {
-    cursor: pointer;
-}
-.btn::after{
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 1rem;
-    position: absolute;
-
-    background-color: white;
-    top:0;
-    left:0;
-    z-index: -1;
-    transition: all 0.4s;
-    border-radius: calc(infinity * 1px);
-    cursor: pointer;
-
-}
-.btn--white::after{
-background-color: #fff;
+  cursor: pointer;
 }
 
-.btn:hover::after{
-    transform: scale(4, 1.4);
-    opacity: 0;
-    
-
-}
-.btn{
-    background-color: #fff;
-    color: black;
-    border-radius: calc(infinity * 1px);
-    padding: 1rem 3rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    position: relative;
-    margin-top: 4rem;
-    animation-name: movingTop;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: backwards;
-    animation-delay: .5s;
-}
-@keyframes movingTop{
-    0%{
-      opacity: 0;
-      transform: translateY(100px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-    
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  border-radius: calc(infinity * 1px);
+  cursor: pointer;
 }
 
-
-
-
-
-#headerAnimation{
-        animation-name: moveInLeft;
-        animation-duration: 2s;
-        /* animation-direction: alternate; */
-        animation-timing-function: ease-out;
+.btn--white::after {
+  background-color: #fff;
 }
 
-#subHeader{
-    animation-name: moveInRight;
-    animation-duration: 2s;
+.btn:hover::after {
+  transform: scale(4, 1.4);
+  opacity: 0;
 }
 
-
-@keyframes moveInLeft {
-    0%{
-    opacity: 0;
-    transform: translateX(-100px);
-    }
-    
-    80%{
-
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-
-    }
+.btn {
+  background-color: #fff;
+  color: black;
+  border-radius: calc(infinity * 1px);
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  margin-top: 4rem;
+  animation-name: movingTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
 }
 
-
-@keyframes moveInRight {
-    0%{
-    opacity: 0;
-    transform: translateX(100px);
-    }
-    
-    80%{
-
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-
-    }
-}
-
-
-@keyframes moveInTop {
-    0%{
+@keyframes movingTop {
+  0% {
     opacity: 0;
     transform: translateY(100px);
-    }
-    
-    80%{
-
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-
-    }
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#headerAnimation {
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  /* animation-direction: alternate; */
+  animation-timing-function: ease-out;
 }
 
+#subHeader {
+  animation-name: moveInRight;
+  animation-duration: 2s;
+}
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
